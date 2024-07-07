@@ -11,8 +11,9 @@ embeddedDiv.append(" Hello World")
 let count = 0
 
 const button = document.getElementById("click_me_button")
+const counterSpan = document.getElementById("counter")
 
 button.addEventListener("click", () => {
     count ++
-    console.log(count)
+    counterSpan.innerText = count
 })
